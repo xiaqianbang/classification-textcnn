@@ -1,1 +1,2 @@
-# classification-textcnn
+# 小水滴筹——爱心筹款平台
+## 一、产品目的
