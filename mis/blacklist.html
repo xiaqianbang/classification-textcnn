@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>救助黑名单</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="applicable-device" content="pc">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" type="text/css" href="./css/sd-icon.css">
+    <link rel="stylesheet" href="./css/blacklist.css">
+</head>
+
+<body>
+    <div id="__nuxt">
+        <!--出现悬浮窗口后,背景变暗-->
+        <div id="shadow" class="shadow_css1"></div>
+        <div id="__layout">
+            <div>
+                <div>
+                    <div class="nav">
+                        <div class="nav-div">
+                            <div class="nav-left">
+                                <div class="nav-img"><img src="images\logo.png" alt="水滴筹logo" class="logo"></div>
+                            </div>
+                            <div class="nav-right">
+                                <ul>
+                                    <li><a href="index.html" class="not-active-list">首页</a></li>
+                                    <li><a href="transparentsdrop.html" class="not-active-list">水滴透明公示</a></li>
+                                    <li><a href="blacklist.html" class="active-list">失信筹款人名单</a></li>
+                                    <li><a href="donations.html" class="not-active-list">求助信息公示系统</a></li>
+                                    <li><a href="announcement.html" class="not-active-list">水滴公告</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="black-list">
+                        <div class="black-list-top">
+                            <div class="black-list-top-title">
+                                失信筹款人名单
+                                <div class="black-list-top-title-line"></div>
+                            </div>
+                            <div class="black-list-top-button" onclick="displayWindow()">我要举报</div>
+                        </div>
+                        <div class="black-list-desc">
+                            <p>
+                                秉承“经营信任”的发展理念，对于编造或夸大求助信息、隐瞒个人财产信息、制造假病历、不当挪用医疗款等行为的恶意筹款人，以黑名单形式进行公示，并持续更新。对于进入失信筹款人黑名单的用户，水滴筹将不再为其提供服务，并视情上报相关政府部门以及征信机构。
+                            </p>
+                            <p>
+                                致力于“让广大中国家庭病有所医”，营造一个互信互助、健康向上的个人大病求助环境，积极配合脱贫攻坚、健康中国建设，服务大局、服务社会、服务人民。</p>
+                            <p>
+                                呼吁广大爱心人士、媒体记者、行业专家、医护人员、热心网友等各方面社会力量持续关注并支持个人大病求助互联网平台工作，积极监督和举报不诚信行为，一起维护和扩充“黑名单”，捍卫广大爱心人士的善行善举，让真正陷入困境的大病患者能够看到希望，得到及时救助。
+                            </p>
+                        </div>
+                        <div class="table-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>手机号</th>
+                                        <th>名称</th>
+                                        <th>筹款项目</th>
+                                        <th>身份证号</th>
+                                        <th>失信时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001234</td>
+                                        <td>XXX谎报病情</td>
+                                        <td>1001</td>
+                                        <td>xxxxxxyyyymmdd1234</td>
+                                        <td>yyyy_mm_dd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>002345</td>
+                                        <td>YYY家境充裕</td>
+                                        <td>1002</td>
+                                        <td>xxxxxxyyyymmdd2345</td>
+                                        <td>yyyy_mm_dd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>003456</td>
+                                        <td>ZZZ使用其他手段非法集资</td>
+                                        <td>1003</td>
+                                        <td>xxxxxxyyyymmdd3456</td>
+                                        <td>yyyy_mm_dd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>004567</td>
+                                        <td>XYZ不履行协议</td>
+                                        <td>1004</td>
+                                        <td>xxxxxxyyyymmdd4567</td>
+                                        <td>yyyy_mm_dd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>005678</td>
+                                        <td>XZY谎报病情</td>
+                                        <td>1005</td>
+                                        <td>xxxxxxyyyymmdd5678</td>
+                                        <td>yyyy_mm_dd</td>
+                                    </tr>
+                                    <tr>
+                                        <td>006789</td>
+                                        <td>ZXY不服从工作安排</td>
+                                        <td>1006</td>
+                                        <td>xxxxxxyyyymmdd6789</td>
+                                        <td>yyyy_mm_dd</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="el-pagination is-background">
+
+                            <button type="button" disabled="disabled" class="btn-prev" ::before><i
+                                    class="el-icon el-icon-arrow-left"></i></button>
+                            <ul class="el-pager">
+                                <li class="number active">1</li>
+                                <!---->
+                                <li class="number">2</li>
+                                <li class="number">3</li>
+                                <li class="number">4</li>
+                                <li class="number">5</li>
+                                <li class="number">6</li>
+                                <!-- more -->
+                                <li class="number">...</li>
+                                <li class="number">9</li>
+                            </ul>
+                            <button type="button" class="btn-next" ::after><i
+                                    class="el-icon el-icon-arrow-right"></i></button>
+
+                        </div>
+                        <div class="overlay" style="display:none;">
+                            <div class="dialog">
+                                <div class="title">
+                                    <h5>验证手机号</h5>
+                                    <a href="javascript:" class="close-dialog"></a>
+                                </div>
+                                <div class="login-dialog">
+                                    <div class="cf-login-wrap">
+                                        <div class="phone-wrap"><span class="phone-icon"></span><input type="number"
+                                                pattern="[0-9]*" placeholder="请输入手机号"></div>
+                                        <div class="verifycode-wrap">
+                                            <div class="key-icon"></div>
+                                            <div><input type="number" pattern="[0-9]*" placeholder="请输入验证码" value="">
+                                            </div>
+                                            <div class="get-code">点击获取</div>
+                                        </div>
+                                        <div id="captcha"></div>
+                                        <div class="phone-tip">收不到验证码？拨打<a href="tel:400-686-1179">4006861179</a> 立即为您查询
+                                        </div> <a href="javascript:;" class="verify-button">验证</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-banner">
+                            <div class="footer-banner-content">
+                                <ul>
+                                    <li><a rel="nofollow" target="_blank">关于我们</a></li>
+                                    <li><a rel="nofollow" target="_blank">用户协议</a></li>
+                                    <li><a rel="nofollow" target="_blank">隐私政策</a>
+                                    <li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-content-upper">
+                            </div>
+                            <div class="footer-licence">
+                                <div class="footer-licence-item">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--悬浮窗口-->
+                <div id="window" class="window_css1">
+                    <a href="javascript:void(0)" onclick="hideWindow()" style="float:right;font-size: 23px;">
+                        ×
+                    </a>
+                    <div class="jubao">
+                        <p>1.举报人</p>
+                        <input type="text" placeholder="例如：张三">
+                        <p>2.举报对象</p>
+                        <input type="text" placeholder="例如：李四 330XXXXXXXXXXXXX">
+                        <p>3.举报原因</p>
+                        <input type="text" placeholder="例如：谎报病情">
+                        <p>4.联系电话</p>
+                        <input type="text" placeholder="137XXXXXXXX">
+                        <div class="black-list-top-button1" style="display: inline-block;">
+                            <a href="javascript:void(0)" onclick="hideWindow()" style="color: white;">立即举报
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script>
+                    /*当点击调用此方法后,将悬浮窗口显示出来,背景变暗*/
+                    function displayWindow() {
+                        /*悬浮窗口的显示,需要将display变成block*/
+                        document.getElementById("window").style.display = "block";
+                        /*将背景变暗*/
+                        document.getElementById("shadow").style.display = "block";
+                    }
+
+                    /*当点击调用此方法,将悬浮窗口和背景全部隐藏*/
+                    function hideWindow() {
+                        document.getElementById("window").style.display = "none";
+                        document.getElementById("shadow").style.display = "none";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 1.获取元素 获取的是 tbody 里面所有的行
+        var trs = document.querySelector('tbody').querySelectorAll('tr');
+        // 2. 利用循环绑定注册事件
+        for (var i = 0; i < trs.length; i++) {
+            // 3. 鼠标经过事件 onmouseover
+            trs[i].onmouseover = function () {
+                // console.log(11);
+                this.className = 'bg';
+            }
+            // 4. 鼠标离开事件 onmouseout
+            trs[i].onmouseout = function () {
+                this.className = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

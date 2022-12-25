@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "sd-icon";
+    src: url('sd-icon.eot?t=1564631196793');
+    /* IE9*/
+    src: url('sd-icon.eot?t=1564631196793#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url("sd-icon.woff2?t=1564631196793") format("woff2"),
+        url("sd-icon.woff?t=1564631196793") format("woff"),
+        url('sd-icon.ttf?t=1564631196793') format('truetype'),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+        url('sd-icon.svg?t=1564631196793#sd-icon') format('svg');
+    /* iOS 4.1- */
+}
+
+[class^="sd-icon-"],
+[class*=" sd-icon-"] {
+    font-family: 'sd-icon' !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.sd-icon-free:before {
+    content: "\ea01";
+}
+
+.sd-icon-persons:before {
+    content: "\ea02";
+}
+
+.sd-icon-rocket:before {
+    content: "\ea03";
+}
+
+.sd-icon-telephone:before {
+    content: "\ea04";
+}

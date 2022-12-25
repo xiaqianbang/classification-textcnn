@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>救助项目详情</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="applicable-device" content="pc">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" type="text/css" href="./css/sd-icon.css">
+    <link rel="stylesheet" href="./css/blacklist.css">
+</head>
+
+<body>
+    <div id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div>
+                <div>
+                    <div class="nav">
+                        <div class="nav-div">
+                            <div class="nav-left">
+                                <div class="nav-img"><img src="images\logo.png" alt="水滴筹logo" class="logo"></div>
+                            </div>
+                            <div class="nav-right">
+                                <ul>
+                                    <li><a href="index.html" class="not-active-list">首页</a></li>
+                                    <li><a href="transparentsdrop.html" class="not-active-list">水滴透明公示</a></li>
+                                    <li><a href="blacklist.html" class="not-active-list">失信筹款人黑名单</a></li>
+                                    <li><a href="donations.html" class="active-list">求助信息公示系统</a></li>
+                                    <li><a href="announcement.html" class="not-active-list">水滴公告</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="black-list">
+                        <div class="black-list-top">
+                            <div class="black-list-top-title">
+                                项目一 详情
+                                <div class="black-list-top-title-line"></div>
+                            </div>
+                        </div>
+                        <div class="black-list-desc">
+                            <p>
+                                项目详情 。。。。。
+                            </p>
+                            <p>
+                                捐赠对象 。。。。。
+                            </p>
+                            <p>
+                                目标金额 。。。。。
+                            </p>
+                            <p>
+                                截止时间 。。。。。
+                            </p>
+                        </div>
+                        <div class="black-list-top-button"><a href="pay.html" style="color: white;">立即捐款</a></div>
+
+                        <div class="overlay" style="display:none;">
+                            <div class="dialog">
+                                <div class="title">
+                                    <h5>验证手机号</h5>
+                                    <a href="javascript:" class="close-dialog"></a>
+                                </div>
+                                <div class="login-dialog">
+                                    <div class="cf-login-wrap">
+                                        <div class="phone-wrap"><span class="phone-icon"></span><input type="number" pattern="[0-9]*" placeholder="请输入手机号"></div>
+                                        <div class="verifycode-wrap">
+                                            <div class="key-icon"></div>
+                                            <div><input type="number" pattern="[0-9]*" placeholder="请输入验证码" value="">
+                                            </div>
+                                            <div class="get-code">点击获取</div>
+                                        </div>
+                                        <div id="captcha"></div>
+                                        <div class="phone-tip">收不到验证码？拨打<a href="tel:400-686-1179">4006861179</a> 立即为您查询
+                                        </div> <a href="javascript:;" class="verify-button">验证</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="footer">
+                        <div class="footer-banner">
+                            <div class="footer-banner-content">
+                                <ul>
+                                    <li><a  rel="nofollow" target="_blank">关于我们</a></li>
+                                    <li><a  rel="nofollow" target="_blank">用户协议</a></li>
+                                    <li><a  rel="nofollow" target="_blank">隐私政策</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-content-upper">
+                            </div>
+                            <div class="footer-licence">
+                                <div class="footer-licence-item">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 1.获取元素 获取的是 tbody 里面所有的行
+        var trs = document.querySelector('tbody').querySelectorAll('tr');
+        // 2. 利用循环绑定注册事件
+        for (var i = 0; i < trs.length; i++) {
+            // 3. 鼠标经过事件 onmouseover
+            trs[i].onmouseover = function() {
+                    // console.log(11);
+                    this.className = 'bg';
+                }
+                // 4. 鼠标离开事件 onmouseout
+            trs[i].onmouseout = function() {
+                this.className = '';
+            }
+        }
+    </script>
+</body>
+
+</html>

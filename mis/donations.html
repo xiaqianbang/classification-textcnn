@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>项目公示</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="applicable-device" content="pc">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" type="text/css" href="./css/sd-icon.css">
+    <link rel="stylesheet" href="./css/blacklist.css">
+</head>
+
+<body>
+    <div id="__nuxt">
+        <!---->
+        <div id="__layout">
+            <div>
+                <div>
+                    <div class="nav">
+                        <div class="nav-div">
+                            <div class="nav-left">
+                                <div class="nav-img"><img src="images\logo.png" alt="水滴筹logo" class="logo"></div>
+                            </div>
+                            <div class="nav-right">
+                                <ul>
+                                    <li><a href="index.html" class="not-active-list">首页</a></li>
+                                    <li><a href="transparentsdrop.html" class="not-active-list">水滴透明公示</a></li>
+                                    <li><a href="blacklist.html" class="not-active-list">失信筹款人名单</a></li>
+                                    <li><a href="donations.html" class="active-list">求助信息公示系统</a></li>
+                                    <li><a href="announcement.html" class="not-active-list">水滴公告</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="black-list">
+                        <div class="black-list-top">
+                            <div class="black-list-top-title">
+                                爱心捐助项目公示
+                                <div class="black-list-top-title-line" style="bottom: -10px;"></div>
+                            </div>
+                        </div>
+                        <div class="black-list-desc">
+                            <p>
+                                以下项目正在请求援助中
+                            </p>
+                        </div>
+                        <!-- list -->
+                        <div class="table-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>项目名称</th>
+                                        <th>金额</th>
+                                        <th>截止时间</th>
+                                        <th>详情</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>项目一</td>
+                                        <td>10万</td>
+                                        <td>2021.10.12</td>
+                                        <td><a href="demo.html">查看详情</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>项目二</td>
+                                        <td>20万</td>
+                                        <td>2021.11.1</td>
+                                        <td><a href="demo.html">查看详情</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>项目三</td>
+                                        <td>10万</td>
+                                        <td>2021.11.21</td>
+                                        <td><a href="demo.html">查看详情</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>项目四</td>
+                                        <td>5万</td>
+                                        <td>2021.12.21</td>
+                                        <td><a href="demo.html">查看详情</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>项目五</td>
+                                        <td>6万</td>
+                                        <td>2022.1.12</td>
+                                        <td><a href="demo.html">查看详情</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>项目六</td>
+                                        <td>9万</td>
+                                        <td>2022.2.1</td>
+                                        <td><a href="demo.html">查看详情</a> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="el-pagination is-background">
+
+                            <button type="button" disabled="disabled" class="btn-prev" ::before><i
+                                    class="el-icon el-icon-arrow-left"></i></button>
+                            <ul class="el-pager">
+                                <li class="number active">1</li>
+                                <!---->
+                                <li class="number">2</li>
+                                <li class="number">3</li>
+                                <li class="number">4</li>
+                                <li class="number">5</li>
+                                <li class="number">6</li>
+                                <!-- more -->
+                                <li class="number">...</li>
+                                <li class="number">9</li>
+                            </ul>
+                            <button type="button" class="btn-next" ::after><i
+                                    class="el-icon el-icon-arrow-right"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-banner">
+                            <div class="footer-banner-content">
+                                <ul>
+                                    <li><a rel="nofollow" target="_blank">关于我们</a></li>
+                                    <li><a rel="nofollow" target="_blank">用户协议</a></li>
+                                    <li><a rel="nofollow" target="_blank">隐私政策</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="footer-content-upper">
+                            </div>
+                            <div class="footer-licence">
+                                <div class="footer-licence-item">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 1.获取元素 获取的是 tbody 里面所有的行
+        var trs = document.querySelector('tbody').querySelectorAll('tr');
+        // 2. 利用循环绑定注册事件
+        for (var i = 0; i < trs.length; i++) {
+            // 3. 鼠标经过事件 onmouseover
+            trs[i].onmouseover = function () {
+                // console.log(11);
+                this.className = 'bg';
+            }
+            // 4. 鼠标离开事件 onmouseout
+            trs[i].onmouseout = function () {
+                this.className = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
